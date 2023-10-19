@@ -17,7 +17,7 @@ class Hero(db.Model):
     super_name = db.Column(db.String(100), nullable=False)
 
 class HeroPower(db.Model):
-    __tablename__ = 'hero_power'
+    __tablename__ = 'hero_power' 
 
     id = db.Column(db.Integer, primary_key=True)
     hero_id = db.Column(db.Integer, db.ForeignKey('hero.id'), nullable=False)

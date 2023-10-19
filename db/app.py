@@ -17,7 +17,7 @@ class Power(db.Model):
     description = db.Column(db.Text)
 
 
-class Hero(db.Model):
+class Hero(db.Model): 
     __tablename__ = 'hero'
 
     id = db.Column(db.Integer, primary_key=True)

@@ -9,7 +9,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 
-class Power(db.Model):
+class Power(db.Model): 
     __tablename__ = 'power'
 
     id = db.Column(db.Integer, primary_key=True)
@@ -18,7 +18,7 @@ class Power(db.Model):
 
 
 class Hero(db.Model): 
-    __tablename__ = 'hero'
+    __tablename__ = 'hero' 
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
